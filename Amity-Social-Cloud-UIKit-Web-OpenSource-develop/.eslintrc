@@ -1,0 +1,23 @@
+{
+  "parser": "@babel/eslint-parser",
+  "extends": ["eko/react"],
+  "settings": {
+    "import/resolver": {
+      "webpack": {
+        "config": "webpack.config.js"
+      }
+    }
+  },
+  "globals": {
+    "globalThis": true,
+    "__VERSION__": true
+  },
+  "rules": {
+    "react/jsx-fragments": "off",
+    "import/no-extraneous-dependencies": "off",
+    "react/require-default-props": "off"
+  },
+  "env": {
+    "jest": true
+  }
+}
